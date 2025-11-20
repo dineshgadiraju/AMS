@@ -9,6 +9,6 @@ COPY main.py /home/app/
 
 COPY requirements.txt /home/app/
 
-RUN python3 --version && pip3 -r requirements.txt
+RUN python3 --version && pip3 install -r requirements.txt
 
 CMD ["ls"]
